@@ -1,0 +1,12 @@
+.header{
+    @include flex-between;
+    background-color: $bgHeader;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    &__left{
+        @include flex-center(41px);
+    }
+    &__right{
+        @include flex-center(33px);
+    }
+}

@@ -1,0 +1,118 @@
+.footer {
+    background-color: $bgDark;
+}
+
+.subscribe {
+    background: url(img/footer/subscribe-img.png);
+    background-position: 25% 75%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.subscribe-content {
+    @include flex-between;
+    padding-top: 97px;
+    padding-bottom: 126px;
+
+    &__left {
+        @include flex-column-center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    &__right {
+        @include flex-column-center;
+    }
+
+    &__text {
+        max-width: 360px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 167.2%;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 167.2%;
+        margin-bottom: 39px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        min-height: 49px;
+        background-color: $bgForm;
+        padding-left: 20px;
+        border-radius: 20px;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &__form input {
+        background-color: $bgForm;
+    }
+
+    &__form input::placeholder {
+        padding: 7px 0;
+        font-size: 14px;
+        line-height: normal;
+        opacity: 0.671;
+    }
+
+    &__btn {
+        min-width: 100px;
+        margin-left: 20px;
+        background-color: #E05C6E;
+        min-height: 49px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 7px;
+        border-radius: 0px 20px 20px 0px;
+
+        &:hover {
+            box-shadow: 0px 0px 2px 1px #E05C6E;
+        }
+    }
+}
+
+.footer-bottom {
+    @include flex-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__copyright {
+        color: $lightFontColor;
+        font-size: 16px;
+    }
+
+    &__social {
+        @include flex-between;
+        gap: 8px;
+    }
+
+    &__link {
+        @include flex-column-center;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+    &__link:hover {
+        background-color: #F16D7F;
+    }
+    &__link:hover svg path {
+        fill: #fff;
+    }
+}
