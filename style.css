@@ -295,6 +295,10 @@ body {
   z-index: 0;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  width: auto;
+}
+
 .carousel-item img {
   margin: 0 auto;
 }
