@@ -82,6 +82,7 @@
 
     @include flex-column-center;
     padding-top: 64px;
+    padding-bottom: 65px;
     border: 1px $borderColor solid;
     margin-bottom: 121px;
 
@@ -150,9 +151,6 @@
 
     }
 
-    &__add-btn {
-        margin-bottom: 65px;
-    }
 
     &__add-link {
         border: #FF6A6A 1px solid;
