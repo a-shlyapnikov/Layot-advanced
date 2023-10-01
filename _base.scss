@@ -22,8 +22,12 @@ img {
     overflow: clip;
     display: block;
 }
+ul, ol {
+    list-style: none;
+}
 
 a {
+    color: $colorFontDark;
     text-decoration: none;
 }
 
@@ -49,6 +53,8 @@ body {
 }
 
 .content {
+    position: relative;
+    overflow: hidden;
     flex: 1;
 }
 
