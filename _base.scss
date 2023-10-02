@@ -46,6 +46,11 @@ a:hover {
 
 }
 
+summary {
+    list-style-type: none;
+    -webkit-details-marker: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
