@@ -17,13 +17,11 @@
     }
 
     &__title {
-        font-size: 48px;
-        font-weight: 900;
+        @include font-property(48px, 900, $promoFontColor);
     }
 
     &__subtitle {
-        font-size: 32px;
-        font-weight: 700;
+        @include font-property(32px, 700, $promoFontColor);
     }
 
     &__content::before {
@@ -31,7 +29,7 @@
         content: '';
         width: 12px;
         height: 92px;
-        background-color: #F16D7F;
+        background-color: $colorSpecial;
     }
 }
 
@@ -52,10 +50,7 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column-center;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -69,16 +64,12 @@
     }
 
     &__subtitle {
-        font-size: 16px;
-        font-weight: 400;
-        color: #FFF;
+        @include font-property(16px, 400, #fff);
 
     }
 
     &__title {
-        color: #F16D7F;
-        font-size: 24px;
-        font-weight: 700;
+        @include font-property(24px, 700, $colorSpecial);
     }
 
     &__item:hover {
@@ -93,16 +84,13 @@
 .product-box {
 
     &__heading {
-        font-size: 30px;
-        font-weight: 400;
+        @include font-property(30px, $color: #222);
         text-align: center;
         margin-bottom: 6px;
     }
 
     &__text {
-        color: #9F9F9F;
-        font-size: 14px;
-        font-weight: 400;
+        @include font-property(14px, $color: #9F9F9F);
         text-align: center;
         margin-bottom: 48px;
     }
@@ -124,16 +112,16 @@
 
     &__browse-link {
         position: relative;
-        color: #F26376;
+        color: $colorSpecial;
         background-color: #fff;
-        border: #FF6A6A 1px solid;
+        border: $colorSpecial 1px solid;
         transition: all 0.3s;
     }
 
     &__browse-link:hover {
         background-color: #F16D7F;
         color: #fff;
-        border: #F16D7F 1px solid;
+        border: $colorSpecial 1px solid;
     }
 }
 
@@ -157,22 +145,15 @@
     }
 
     &__title {
-
-        font-size: 13px;
-        font-weight: 400;
+        @include font-property(13px);
     }
 
     &__text {
-        color: #5D5D5D;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
+        @include font-property(14px, 300,#5D5D5D);
     }
 
     &__price {
-        color: #F16D7F;
-        font-size: 16px;
-        font-weight: 400;
+        @include font-property(16px, 400, $colorSpecial);
     }
 
     &__add {
@@ -188,45 +169,38 @@
         justify-content: center;
         align-items: center;
         gap: 11px;
-        color: #FFFFFF;
+        color: #fff;
 
         &:hover {
             box-shadow: 0 0 5px #fff;
         }
 
         &:hover svg path {
-            fill: #F16D7F;
+            fill: $colorSpecial;
         }
     }
 }
 
 .feature {
+    @include flex-between;
     background-color: $bgDark;
-    display: flex;
     padding-top: 104px;
     padding-bottom: 104px;
-    justify-content: space-between;
     gap: 30px;
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center;
         justify-content: space-between;
         min-height: 134px;
     }
 
     &__heading {
-        color: $lightFontColor;
-        font-size: 19.96px;
-        font-weight: 400;
+        @include font-property(20px, $color:$lightFontColor );
     }
-    &__text{
-        color: $lightFontColor;
+
+    &__text {
+        @include font-property(14px, 300, $lightFontColor);
         text-align: center;
-        font-size: 13.972px;
-        font-weight: 300;
         max-width: 360px;
     }
 }
-

@@ -17,7 +17,7 @@
 }
 
 .svg-btn:hover svg path {
-    fill: #F16D7F;
+    fill: $colorSpecial;
 }
 
 
@@ -28,14 +28,11 @@
     padding-bottom: 60px;
 
     &__title {
-        font-size: 24px;
-        font-weight: 400;
-        color: $colorSpecial;
+        @include font-property(24px, 400, $colorSpecial);
     }
 
     &__breadcrumbs {
-        font-size: 14px;
-        font-weight: 300;
+        @include font-property(14px, 300);
     }
 
     &__breadcrumbs ul {
@@ -65,8 +62,7 @@
     }
 
     &__link-active {
-        color: $colorSpecial;
-        font-weight: 700;
+        @include font-property(14px, 700, $colorSpecial);
     }
 }
 
@@ -76,7 +72,7 @@
 
 .product-description {
     margin-top: -66px;
-    background-color: #fff;
+    background-color: $bgLight;
     position: relative;
     z-index: 1;
 
@@ -87,9 +83,7 @@
     margin-bottom: 121px;
 
     &__subtitle {
-        color: $colorSpecial;
-        font-size: 14px;
-        font-weight: 300;
+        @include font-property(14px, 300, $colorSpecial);
         position: relative;
         padding-bottom: 28px;
     }
@@ -104,26 +98,20 @@
     }
 
     &__title {
-        color: #4D4D4D;
-        font-size: 18px;
-        font-weight: 300;
+        @include font-property(18px, 300, #4D4D4D);
         margin-bottom: 48px;
     }
 
     &__text {
-        color: #5E5E5E;
+        @include font-property(14px, 300, #5E5E5E);
         text-align: center;
-        font-size: 14px;
-        font-weight: 300;
         max-width: 555px;
         margin-bottom: 32px;
     }
 
     &__price {
+        @include font-property(24px, 300, $colorSpecial);
         position: relative;
-        color: #EF5B70;
-        font-size: 24px;
-        font-weight: 300;
         padding-bottom: 130px;
     }
     &__price::after{
@@ -144,16 +132,14 @@
 
     &__summary {
         @include flex-center(9px);
-        color: #6F6E6E;
-        font-size: 14px;
-        font-weight: 400;
+        @include font-property(14px, 400, $colorFontGrey);
         background-color: #fff;
 
     }
 
 
     &__add-link {
-        border: #FF6A6A 1px solid;
+        border: $colorSpecial 1px solid;
         @include flex-center(23px);
         color: $colorSpecial;
         transition:  background-color 0.3s, color 0.3s;

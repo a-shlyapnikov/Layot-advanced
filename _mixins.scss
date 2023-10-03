@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-@mixin flex-center($gap) {
+@mixin flex-center($gap: 0) {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -16,5 +16,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+@mixin font-property($font-size: 14px, $font-weight: 400, $color: $colorFontDark, $font-style: normal, $line-height: normal){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    font-style: $font-style;
+    line-height: $line-height;
 }

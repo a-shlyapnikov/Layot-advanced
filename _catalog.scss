@@ -13,12 +13,10 @@
     width: 360px;
 
     &__summary {
+        @include flex-center(11px);
+        @include font-property(14px, 600, $colorFontDark);
         padding-left: 16px;
         padding-top: 13px;
-        color: $colorFontDark;
-        font-size: 14px;
-        font-weight: 600;
-        @include flex-center(11px);
     }
 
     &[open] {
@@ -49,12 +47,10 @@
     }
 
     &__item-heading {
+        @include font-property($color: $colorFontGrey);
         padding-top: 8px;
         padding-left: 11px;
         padding-bottom: 12px;
-        color: #6F6E6E;
-        font-size: 14px;
-        font-weight: 400;
         border-left: 5px solid $colorSpecial;
         border-bottom: 1px solid #EBEBEB;
     }
@@ -67,9 +63,7 @@
     }
 
     &__nav a {
-        color: #6F6E6E;
-        font-size: 14px;
-        font-weight: 400;
+        @include font-property($color: $colorFontGrey);
     }
 
     &__nav a:hover {
@@ -90,9 +84,7 @@
 
     &__summary {
         @include flex-center(10px);
-        color: #6F6E6E;
-        font-size: 14px;
-        font-weight: 400;
+        @include font-property($color: $colorFontGrey);
     }
 
     &__box {
@@ -109,14 +101,11 @@
     }
 
     &__check {
+        @include font-property($color: $colorFontGrey);
+        font-family: Roboto;
         display: flex;
         gap: 9px;
-        color: #6F6E6E;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        color: $colorFontGrey;
     }
 
     &__check input {
@@ -180,9 +169,7 @@
 
     }
     &__bnt, &__number{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
     }
 
     &__btn:hover path {
@@ -207,7 +194,6 @@
 
     }
     &__number:hover{
-
         background: $colorSpecial;
         border: 1px solid $colorSpecial;
     }

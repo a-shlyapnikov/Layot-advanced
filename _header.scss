@@ -67,9 +67,7 @@
     }
 
     &__heading {
-        color: $colorFontDark;
-        font-weight: 700;
-        font-size: 14px;
+        @include font-property(14px, 700. $colorFontDark);
         margin-bottom: 24px;
     }
 
@@ -80,10 +78,8 @@
     }
 
     &__title {
+        @include font-property($color: $colorSpecial);
         display: block;
-        color: $colorSpecial;
-        font-size: 14px;
-        font-weight: 400;
         margin-bottom: 12px;
     }
 
@@ -95,10 +91,7 @@
     }
 
     &__link {
-        color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 400;
+        @include font-property($color:#6F6E6E);
     }
     &__link:hover{
         color: $colorSpecial;
