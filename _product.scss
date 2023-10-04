@@ -57,7 +57,7 @@
         font-weight: 300;
     }
 
-    &__breadcrumbs ul li:first-child &__link::before {
+    &__breadcrumbs li:first-child &__link::before {
         content: '';
     }
 

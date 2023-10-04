@@ -16,6 +16,11 @@
     &__link {
         position: relative;
     }
+    &__link:hover svg path {
+        fill: $colorSpecial;
+    }
+    
+    
 
     &__basket::after {
         @include flex-column-center;
@@ -67,7 +72,7 @@
     }
 
     &__heading {
-        @include font-property(14px, 700. $colorFontDark);
+        @include font-property(14px, 700, $colorFontDark);
         margin-bottom: 24px;
     }
 
