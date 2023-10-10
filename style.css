@@ -939,74 +939,6 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 300;
 }
 
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 .shopping-cart {
   padding-top: 96px;
   padding-bottom: 128px;
@@ -1035,7 +967,8 @@ input[type=number]::-webkit-inner-spin-button {
   transition: color 0.3s, background-color 0.3s;
 }
 .shopping-cart_btn:hover {
-  background-color: #A4A4A4;
+  background-color: #F16D7F;
+  border-color: #F16D7F;
 }
 .shopping-cart_btn:hover {
   color: #fff;
@@ -1060,6 +993,9 @@ input[type=number]::-webkit-inner-spin-button {
 .cart__info {
   padding: 22px 97px 61px 32px;
   position: relative;
+}
+.cart__img img {
+  height: 100%;
 }
 .cart__title {
   font-size: 24px;
@@ -1204,7 +1140,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #fff;
 }
 .checkout__btn:hover {
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  transform: scale(1.02);
 }
 
 .registration {
@@ -1315,7 +1251,7 @@ input[type=number]::-webkit-inner-spin-button {
   gap: 20px;
 }
 .registration__button:hover {
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  transform: scale(1.02);
 }
 .registration__heading {
   font-size: 24px;
