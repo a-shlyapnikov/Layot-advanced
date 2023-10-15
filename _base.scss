@@ -14,7 +14,9 @@ h1, h2, h3, h4, h5, h6, p{
 :active {
     outline: none;
 }
-
+*::before, ::after{
+    box-sizing: border-box;
+}
 
 img {
     max-width: 100%;
