@@ -96,12 +96,14 @@
             align-items: flex-start;
         }
     }
-    .shipping{
-        &__title{
+
+    .shipping {
+        &__title {
             margin-top: 0;
         }
     }
-    .checkout{
+
+    .checkout {
         margin-top: 40px;
     }
 
@@ -109,20 +111,24 @@
     .registration {
         grid-template-columns: repeat(2, 2fr);
         gap: 22px;
-        &-right{
+
+        &-right {
             grid-column: span 1;
         }
-        &__heading{
+
+        &__heading {
             font-size: 16px;
         }
-        &__desc{
+
+        &__desc {
             font-size: 16px;
 
         }
-        &__list li{
+
+        &__list li {
             font-size: 16px;
-            
+
         }
-        
+
     }
 }

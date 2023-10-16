@@ -16,7 +16,7 @@
         grid-column: span 2;
     }
 
-    
+
     &__heading {
         @include font-property(24px, 300, $colorFontDark);
 
@@ -41,9 +41,10 @@
     }
 
 }
-.registration-form{
-        display: flex;
-        flex-direction: column;
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
 
     &__title {
         @include font-property(16px, 300, #222);
@@ -64,7 +65,8 @@
     &__input::placeholder {
         @include font-property(13px, 300, #B1B1B1);
     }
-    &__input:hover{
+
+    &__input:hover {
         transform: scale(1.02);
     }
 
@@ -122,7 +124,7 @@
     }
 
     &__button:hover {
-       transform: scale(1.02);
+        transform: scale(1.02);
     }
 
 }
