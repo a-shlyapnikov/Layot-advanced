@@ -19,6 +19,9 @@
 
         }
     }
+    .sale{
+        gap: 20px;
+    }
 
     .product-box__content {
         grid-template-columns: repeat(2, 1fr);

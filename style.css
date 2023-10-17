@@ -1307,6 +1307,9 @@ input[type=number]::-webkit-inner-spin-button {
     font-style: normal;
     line-height: normal;
   }
+  .sale {
+    gap: 20px;
+  }
   .product-box__content {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
