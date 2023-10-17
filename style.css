@@ -1357,6 +1357,9 @@ input[type=number]::-webkit-inner-spin-button {
     padding-top: 29px;
     padding-bottom: 29px;
   }
+  .carousel-item img {
+    max-width: 466px;
+  }
   .product-info {
     padding: 0;
   }
