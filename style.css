@@ -1371,6 +1371,9 @@ input[type=number]::-webkit-inner-spin-button {
     gap: 16px;
     align-items: flex-start;
   }
+  .shipping {
+    margin-bottom: 0;
+  }
   .shipping__title {
     margin-top: 0;
   }
